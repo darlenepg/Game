@@ -1,0 +1,49 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('images/landing-bg.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the background image */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 100px auto; /* Center the container */
+}
+
+h1 {
+    color: #3498db;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #193649;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

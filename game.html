@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeth Sorting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sort the Foods: Good or Bad for Your Teeth</h1> 
+        <div class="timer" id="timer">Time Taken: <span class="time" id="time">0</span> seconds</div><br>
+        <button class="restart-button" id="restart-button" style="display: none;">Restart Game</button>
+        <div class="sorting-area">
+            <!-- Healthy Bin -->
+            <div class="bin" id="healthy-bin">
+                <h2>Good for Teeth</h2>
+            </div>
+
+            <!-- Junk Bin -->
+            <div class="bin" id="junk-bin">
+                <h2>Bad for Teeth</h2>
+            </div>
+        </div>
+
+        <!-- Food Items -->
+        <div class="food-items">
+            <img src="images/apple.png" class="food" draggable="true" id="apple" alt="Apple">
+            <img src="images/candies.png" class="food" draggable="true" id="candy" alt="Candy">
+            <img src="images/popcorn.png" class="food" draggable="true" id="popcorn" alt="Popcorn">
+            <img src="images/chips.png" class="food" draggable="true" id="chips" alt="Chips">
+            <img src="images/kale.png" class="food" draggable="true" id="kale" alt="Kale">
+            <img src="images/donut.png" class="food" draggable="true" id="donut" alt="Donut">
+            <img src="images/egg.png" class="food" draggable="true" id="egg" alt="Egg">
+            <img src="images/soda.png" class="food" draggable="true" id="soda" alt="Soda">
+            <img src="images/pizza.png" class="food" draggable="true" id="pizza" alt="Pizza">
+            <img src="images/muffin.png" class="food" draggable="true" id="muffin" alt="Muffin">
+            <img src="images/cheese.png" class="food" draggable="true" id="cheese" alt="Cheese">
+            <img src="images/carrot.png" class="food" draggable="true" id="carrot" alt="Carrot">
+            <img src="images/cake.png" class="food" draggable="true" id="cake" alt="Cake">
+            <img src="images/celery.png" class="food" draggable="true" id="celery" alt="Celery">
+            
+        </div>
+        
+
+        <!-- Message -->
+        <div class="message" id="message"></div>
+
+        <audio id="correct-sound" src="sounds/correct.wav" preload="auto"></audio>
+        <audio id="incorrect-sound" src="sounds/incorrect.wav" preload="auto"></audio>
+        <audio id="finish-sound" src="sounds/finish.wav" preload="auto"></audio>
+
+
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    </div>
+</body>
+</html>

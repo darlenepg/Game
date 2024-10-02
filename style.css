@@ -1,0 +1,115 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('images/bg.png'); /* Add your background image here */
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+    
+}
+.timer {
+    font-size: 25px;
+    font-weight: bold;
+}
+.time {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.restart-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.sorting-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.bin {
+    width: 450px; /* Increased width */
+    height: 260px; /* Increased height */
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the bin image */
+}
+
+.bin-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+    margin-top: 30px;
+    max-width: 100%; /* Allow it to take the full width of the container */
+    padding: 0 20px; /* Optional: Add some padding on the sides */
+}
+
+.food {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
+
+.message {
+    margin: 20px 0; /* Add some space around the message */
+    font-size: 24px;
+    color: #2ecc71; /* Default color */
+    text-align: center; /* Center the text */
+    transition: color 0.3s ease; /* Smooth color transitions */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Animation for the congratulatory message */
+@keyframes celebrate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+.celebrate {
+    animation: celebrate 2s ease forwards; /* Apply animation */
+}
+
