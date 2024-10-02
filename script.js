@@ -108,12 +108,12 @@ function drop(e) {
     const foodId = e.dataTransfer.getData('text') || e.target.id; // Handle touch drop
     const foodElement = document.getElementById(foodId);
 
-    if (e.target.id === 'healthy-bin' && ['apple', 'carrot', 'kale', 'egg', 'celery', 'cheese'].includes(foodId)) {
+    if (e.target.id === 'healthy-bin' && ['apple', 'carrot', 'kale', 'egg', 'celery', 'cheese', 'fish', 'milk'].includes(foodId)) {
         e.target.appendChild(foodElement);
         correctCount++;
         message.textContent = "Great! That food is healthy for your teeth!";
         message.style.color = "#2ecc71"; // Green for correct
-    } else if (e.target.id === 'junk-bin' && ['candy', 'chips', 'donut', 'muffin', 'cake', 'popcorn', 'pizza', 'soda'].includes(foodId)) {
+    } else if (e.target.id === 'junk-bin' && ['candy', 'chips', 'donut', 'muffin', 'cake', 'popcorn', 'cookies', 'soda'].includes(foodId)) {
         e.target.appendChild(foodElement);
         correctCount++;
         message.textContent = "Correct! That food is bad for your teeth!";
@@ -144,7 +144,7 @@ function drop(e) {
     const foodId = e.dataTransfer.getData('text') || e.target.id; // Handle touch drop
     const foodElement = document.getElementById(foodId);
 
-    if (e.target.id === 'healthy-bin' && ['apple', 'carrot', 'kale', 'egg', 'celery', 'cheese'].includes(foodId)) {
+    if (e.target.id === 'healthy-bin' && ['apple', 'carrot', 'kale', 'egg', 'celery', 'cheese','fish', 'milk'].includes(foodId)) {
         e.target.appendChild(foodElement);
         correctCount++;
         message.textContent = "Great! That food is healthy for your teeth!";
@@ -153,7 +153,7 @@ function drop(e) {
         // Play correct sound
         correctSound.currentTime = 0; // Reset sound to play from start
         correctSound.play();
-    } else if (e.target.id === 'junk-bin' && ['candy', 'chips', 'donut', 'muffin', 'cake', 'popcorn','soda', 'pizza'].includes(foodId)) {
+    } else if (e.target.id === 'junk-bin' && ['candy', 'chips', 'donut', 'muffin', 'cake', 'popcorn','soda', 'cookies'].includes(foodId)) {
         e.target.appendChild(foodElement);
         correctCount++;
         message.textContent = "Correct! That food is bad for your teeth!";
